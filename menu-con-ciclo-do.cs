@@ -13,7 +13,13 @@ do
         scelta = int.Parse(Console.ReadLine());
         if (scelta == 1)
         {
-            Console.WriteLine("sei andato avanti");
+            Console.WriteLine("sei andato avanti\nPremere 2 per al menu iniziale");
+            scelta = int.Parse(Console.ReadLine());
+            if (scelta == 2)
+            {
+                stato = 0;
+                Console.Clear();
+            }
         }
         else if (scelta == 2)
         {
@@ -35,7 +41,7 @@ do
 }
 while (stato==0);
 
-Console.ReadKey();
+
 
 
 
